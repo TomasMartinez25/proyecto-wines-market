@@ -55,6 +55,7 @@ header {
     font-size: 35px;
     z-index: 101;
     cursor: pointer;
+    display: none;
 }
 
 #menu-toggle {
@@ -222,7 +223,9 @@ section {
         padding: 30px 20px;
         transition: all .5s ease;
     }
-    #menu-toggle:checked + label.menu-icon-action + ul {
+
+    .navlist.open {
         right: 0;
     }
+ 
 }
